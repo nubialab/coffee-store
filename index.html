@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Coffee</title>
+  </head>
+  <body>
+    <div class="box-video">
+      <video src="videos/coffe.mp4" loop muted autoplay></video>
+      <div class="mascara"></div>
+    </div>
+
+    <header>
+      <section>
+        <a>
+          <img src="img/logo.png" alt="logo-cafeteria" />
+        </a>
+
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Menu</a>
+          <a href="#">Reviews</a>
+          <a href="#" onclick="showModal()">Address</a>
+        </nav>
+      </section>
+    </header>
+
+    <section class="box-main">
+      <div>
+        <h3>Code with the best coffee in the region</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, est
+          officia. Fugit delectus similique inventore nisi? Suscipit, fuga
+          voluptatum! Officiis quis commodi quasi doloremque modi. Eos totam
+          doloribus nam tempore!
+        </p>
+        <a class="button-link" href="#">Pay yours now</a>
+      </div>
+    </section>
+
+    <section class="box-on">
+      <h2 class="title"><span>About</span> Us</h2>
+      
+      <div class="on-container">
+      <div class="on-image">
+        <img src="img/about-img.jpeg" alt="café">
+      </div>
+
+      <div class="on-text">
+        <h3>What makes our coffee special?</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero omnis sed quae temporibus ipsam hic aliquam voluptatem molestiae consectetur, soluta eligendi ipsa beatae optio dolor quidem commodi voluptates totam aperiam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam vitae culpa ullam, quidem officia neque a ducimus! Maiores similique odit nostrum necessitatibus cumque totam veniam doloribus animi, cupiditate iste exercitationem!</p>
+        <a class="button-link" href="#">Learn more</a>
+      </div>
+    </div>
+    </section>
+
+    <div class="modal">
+        <h3 class="title"><span>Our</span> Address</h3>
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54052.808796521145!2d-95.50214695000001!3d32.142187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86484e9d2573c0b7%3A0x78c1f008cad790a6!2sCoffee%20City%2C%20TX%2C%20USA!5e0!3m2!1sen!2sbr!4v1736640713049!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="mascara-modal" onclick="closeModal()"></div>
+  </body>
+
+  <script src="scripts.js"></script>
+</html>
