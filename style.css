@@ -14,34 +14,44 @@
   font-family: "Roboto", serif;
 }
 
+/* Configuração do vídeo de fundo */
 .box-video {
   position: fixed;
-  z-index: -1;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  z-index: -1;
 }
 
 .box-video video {
-  min-height: 100%;
-  min-width: 100%;
-  position: fixed;
-  top: 0;
+  width: 100%;      
+  height: 100%;     
+  object-fit: cover; 
 }
 
+/* Máscara sobre o vídeo para dar um efeito visual */
 .mascara {
   height: 100%;
   width: 100%;
   position: fixed;
   top: 0;
-  background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+  background: linear-gradient(
+    109deg,
+    rgba(10, 12, 16, 0.99) 15%,
+    rgba(10, 12, 16, 0.7) 50%,
+    rgba(10, 12, 16, 0.99) 85%
+  );
 }
 
+/* Estilo para seções da página */
 section {
   padding: 3rem 2rem;
   margin: 0 auto;
   max-width: 1200px;
 }
 
+/* Estilo para o cabeçalho fixo no topo da página */
 header {
   position: fixed;
   top: 0;
@@ -64,6 +74,7 @@ header section a img {
   height: 6rem;
 }
 
+/* Estilo dos links no menu */
 header section nav a {
   margin: 0 1rem;
   font-size: 1.8rem;
@@ -71,12 +82,13 @@ header section nav a {
   transition: 0.3s linear;
 }
 
+/* Estilo para links com hover (efeito ao passar o mouse) */
 header section nav a:hover {
   color: var(--main-color);
   border-bottom: 0.1rem solid var(--main-color);
   padding-bottom: 0.5rem;
 }
-
+/* Estilos para a seção principal*/
 .box-main {
   min-height: 100vh;
   display: flex;
@@ -87,7 +99,7 @@ header section nav a:hover {
   max-width: 60rem;
 }
 
-.box-main div h3{
+.box-main div h3 {
   color: white;
   font-size: 6rem;
   text-transform: uppercase;
@@ -99,6 +111,7 @@ header section nav a:hover {
   font-weight: lighter;
   padding: 1rem 0;
   line-height: 1.8;
+  text-align: justify;
 }
 
 .button-link {
@@ -125,7 +138,7 @@ header section nav a:hover {
   font-size: 4rem;
 }
 
-.title span{
+.title span {
   color: var(--main-color);
 }
 
@@ -162,18 +175,25 @@ header section nav a:hover {
   padding: 1rem 0;
   text-align: justify;
 }
-
+/* Estilo do modal */
 .modal {
   display: flex;
   flex-direction: column;
-  background-color: transparent;
   gap: 20px;
   z-index: 4;
   position: fixed;
   top: 50%;
   left: -30%;
   transform: translate(-50%, -50%);
-  transition: left 1s linear;
+  transition: left 1.1s linear;
+  height: 70vh;
+  width: 30%;
+}
+
+.modal iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 .mascara-modal {
@@ -183,5 +203,49 @@ header section nav a:hover {
   inset: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+  background: linear-gradient(
+    109deg,
+    rgba(10, 12, 16, 0.99) 15%,
+    rgba(10, 12, 16, 0.7) 50%,
+    rgba(10, 12, 16, 0.99) 85%
+  );
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+  .box-video video {
+    object-fit: cover; 
+    width: 100%; 
+    height: 100%; 
+  }
+
+  header section {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  header section nav a {
+    font-size: 1.6rem; 
+  }
+
+  .box-main div h3 {
+    font-size: 3.7rem; 
+  }
+
+  .box-main div p {
+    font-size: 1.7rem; 
+  }
+
+  .button-link {
+    font-size: 1.4rem; 
+    padding: 0.6rem 1.8rem;
+  }
+
+  .modal {
+    left: -90%;
+    width: 95%;
+    height: 70vh;
+  }
 }

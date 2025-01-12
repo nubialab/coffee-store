@@ -17,20 +17,24 @@
 
     <header>
       <section>
+        <!-- Logo da cafeteria -->
         <a>
           <img src="img/logo.png" alt="logo-cafeteria" />
         </a>
 
+        <!-- Navegação principal -->
         <nav>
           <a href="#">Home</a>
           <a href="#">About</a>
           <a href="#">Menu</a>
           <a href="#">Reviews</a>
+          <!-- Link que abre o modal para exibir o google maps -->
           <a href="#" onclick="showModal()">Address</a>
         </nav>
       </section>
     </header>
 
+    <!-- Seção principal com título e descrição -->
     <section class="box-main">
       <div>
         <h3>Code with the best coffee in the region</h3>
@@ -40,10 +44,11 @@
           voluptatum! Officiis quis commodi quasi doloremque modi. Eos totam
           doloribus nam tempore!
         </p>
-        <a class="button-link" href="#">Pay yours now</a>
+        <a class="button-link" href="#">Pay now</a>
       </div>
     </section>
 
+    <!-- Seção sobre a cafeteria -->
     <section class="box-on">
       <h2 class="title"><span>About</span> Us</h2>
       
@@ -61,10 +66,11 @@
     </div>
     </section>
 
+    <!-- Modal com o endereço da cafeteria -->
     <div class="modal">
         <h3 class="title"><span>Our</span> Address</h3>
         
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54052.808796521145!2d-95.50214695000001!3d32.142187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86484e9d2573c0b7%3A0x78c1f008cad790a6!2sCoffee%20City%2C%20TX%2C%20USA!5e0!3m2!1sen!2sbr!4v1736640713049!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map-address" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54052.808796521145!2d-95.50214695000001!3d32.142187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86484e9d2573c0b7%3A0x78c1f008cad790a6!2sCoffee%20City%2C%20TX%2C%20USA!5e0!3m2!1sen!2sbr!4v1736640713049!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
     <div class="mascara-modal" onclick="closeModal()"></div>
